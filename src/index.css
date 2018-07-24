@@ -1,0 +1,92 @@
+body {
+  text-align: center;
+}
+
+.login-container {
+  width: 400px;
+  background: lightgray;
+  border-radius: 5px;
+  position: absolute;
+  top: 30%;
+  left: 40%;
+}
+
+.login-form {
+  margin: 30px;
+}
+
+.alignLeft {
+  text-align: left !important;
+}
+
+.search-bar {
+  margin: 20px;
+}
+.population-div {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #B6B6B6;
+  border-radius: 5px;
+  margin-right:10px;
+  margin-top:10px;
+}
+.button-container {
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+}
+.button-container button {
+  margin-top: 20px;
+  width: 100px;
+  margin:10px;
+}
+.main-container {
+  width:80%;
+  margin:0 auto;
+}
+.planet-card-container {
+  display:flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.population-div img {
+  vertical-align: top !important;
+  margin-top:10px;
+  cursor: pointer;
+}
+.small-planet {
+  content:url('./images/earth.png');
+  width:40px;
+  height:40px;
+}
+.moderate-planet {
+  content:url('./images/earth.png');
+  width:60px;
+  height:60px;
+}
+.large-planet {
+  content:url('./images/earth.png');
+  width:80px;
+  height:80px;
+}
+.huge-planet {
+  content:url('./images/earth.png');
+  width:100px;
+  height:100px;
+}
+.population-unknown {
+  content:url('./images/population-unknown.jpg');
+  width:50px;
+  height:50px;
+}
+.planet-card-labels {
+  margin-top:10px;
+}
+.planet-card-labels span {
+  display: block;
+}
+.modal-body td {
+  text-align: left;
+  margin: 5px;
+  padding: 5px;
+}
