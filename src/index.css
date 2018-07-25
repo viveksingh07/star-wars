@@ -47,7 +47,7 @@ body {
 .planet-card-container {
   display:flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
 }
 .population-div img {
   vertical-align: top !important;
@@ -55,27 +55,22 @@ body {
   cursor: pointer;
 }
 .small-planet {
-  content:url('./images/earth.png');
   width:40px;
   height:40px;
 }
 .moderate-planet {
-  content:url('./images/earth.png');
   width:60px;
   height:60px;
 }
 .large-planet {
-  content:url('./images/earth.png');
   width:80px;
   height:80px;
 }
 .huge-planet {
-  content:url('./images/earth.png');
   width:100px;
   height:100px;
 }
 .population-unknown {
-  content:url('./images/population-unknown.jpg');
   width:50px;
   height:50px;
 }
@@ -89,4 +84,71 @@ body {
   text-align: left;
   margin: 5px;
   padding: 5px;
+}
+.heading-container {
+  overflow: hidden;
+}
+.right-panel {
+  float: right;
+}
+.right-panel h4 {
+  display: inline-block;
+  font-size: 14px;
+  color: #337ab7;
+  font-weight: 600;
+}
+.right-panel a {
+  margin-left: 10px;
+  position: relative;
+  top:-1px;
+  cursor: pointer;
+  font-size: 12px;
+  color: #337ab7;
+  font-weight: 600;
+}
+.left-panel {
+  float:left;
+}
+.left-panel h4 {
+  font-size: 14px;
+  color: #337ab7;
+  font-weight: 600;
+}
+hr {
+  margin: 0;
+}
+
+.spinner {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   height:60px;
+   width:60px;
+   margin:0px auto;
+   -webkit-animation: rotation .6s infinite linear;
+   -moz-animation: rotation .6s infinite linear;
+   -o-animation: rotation .6s infinite linear;
+   animation: rotation .6s infinite linear;
+   border-left:6px solid rgba(0,174,239,.15);
+   border-right:6px solid rgba(0,174,239,.15);
+   border-bottom:6px solid rgba(0,174,239,.15);
+   border-top:6px solid rgba(0,174,239,.8);
+   border-radius:100%;
+}
+
+@-webkit-keyframes rotation {
+   from {-webkit-transform: rotate(0deg);}
+   to {-webkit-transform: rotate(359deg);}
+}
+@-moz-keyframes rotation {
+   from {-moz-transform: rotate(0deg);}
+   to {-moz-transform: rotate(359deg);}
+}
+@-o-keyframes rotation {
+   from {-o-transform: rotate(0deg);}
+   to {-o-transform: rotate(359deg);}
+}
+@keyframes rotation {
+   from {transform: rotate(0deg);}
+   to {transform: rotate(359deg);}
 }

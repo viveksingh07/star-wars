@@ -8,7 +8,7 @@ export default class Planet extends Component {
 
   applyClassByPopulation() {
     const { population } = this.props.planetObj;
-    const populationNum = parseInt(population);
+    const populationNum = parseInt(population, 10);
     if(populationNum < 10000000) {
       return 'small-planet';
     }
@@ -35,7 +35,7 @@ export default class Planet extends Component {
           <span><label>Name: </label> {name}</span>
           <span><label>Population: </label> {population}</span>
         </div>
-        <img className={planetClass} title={ name } onClick={() => this.showDetails()} />
+        <img src={require('../images/earth.png')} alt='Not available' className={planetClass} title={ name } onClick={() => this.showDetails()} />
       </div>
     )
   }

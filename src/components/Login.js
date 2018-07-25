@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import axios from 'axios';
 import _ from 'lodash';
 import { Redirect } from 'react-router';
-import { bake_cookie } from 'sfcookies';
 import { Form, FormGroup, FormControl, Col, ControlLabel, Button } from 'react-bootstrap';
 
 export const cookie_key = 'User';
@@ -30,10 +29,10 @@ export default class Login extends Component {
         if(people) {
           const match = _.find(people.results, { 'birth_year': password });
           if(match){
+            localStorage.setItem('user', userId);
             this.setState({
               redirect: true
             })
-            bake_cookie(cookie_key, userId);
           }
           else {
             this.setState({
