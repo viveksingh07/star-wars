@@ -69,9 +69,7 @@ export default class Login extends Component {
       return <Redirect push to="/planets" />;
     }
     return (
-      <div className='login-form'>
-        <h4>Login to Star Wars</h4>
-        <br />
+      <div className='login-form'>        
         <Form horizontal>
           <FormGroup controlId="formHorizontalUserId" validationState={this.getUserValidation()}>
             <Col componentClass={ControlLabel} sm={3} className="alignLeft">

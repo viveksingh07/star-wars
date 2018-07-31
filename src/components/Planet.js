@@ -32,8 +32,8 @@ export default class Planet extends Component {
     return (
       <div className = "population-div">
         <div className= "planet-card-labels">
-          <span><label>Name: </label> {name}</span>
-          <span><label>Population: </label> {population}</span>
+          <span><label>Name: </label>{name}</span>
+          <span><label>Population: </label>{population}</span>
         </div>
         <img src={require('../images/earth.png')} alt='Not available' className={planetClass} title={ name } onClick={() => this.showDetails()} />
       </div>
